@@ -87,10 +87,9 @@ O projeto foi desenvolvido em Terraform, uma ferramenta de desenvolvimento de in
 
 Aqui estão alguns detalhes técnicos importantes acerca do código Terraform fornecido:
 
-1. **Configuração de Subnets**: O código define duas subnets públicas e duas privadas, cada uma em zonas de disponibilidade diferentes. Isso não apenas distribui a carga e melhora a resiliência, mas também permite a segregação de tráfego entre recursos públicos e privados, como instâncias de banco de dados e servidores web.
+1. **Configuração de Subnets**: Uma sub-rede, ou subnet, é uma subdivisão lógica de uma rede IP. A subdivisão de uma rede grande em redes menores resulta num tráfego de rede reduzido, administração simplificada e melhor performance de rede.
 
 1. **Security Groups e Regras**: Os security groups são configurados para diferentes recursos, como instâncias, load balancers e bancos de dados. As regras definidas permitem tráfego específico (por exemplo, HTTP, SSH, MySQL) de/para blocos de endereços IP definidos, garantindo que apenas o tráfego necessário e seguro seja permitido, o que é fundamental para a segurança da rede.
-
 
 1. **Auto Scaling Group**: A configuração de um grupo de auto scaling para gerenciar a escalabilidade das instâncias EC2 de forma dinâmica, em resposta a mudanças na demanda ou performance. Mais específicamente, esta escalabilidade é dada pela alta utilização de CPU, que é monitorada através de um alarme CloudWatch.
 
