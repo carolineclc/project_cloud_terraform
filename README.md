@@ -85,9 +85,6 @@ Aqui estão alguns detalhes técnicos importantes acerca do código Terraform fo
 
 1. **Security Groups e Regras**: Os security groups são configurados para diferentes recursos, como instâncias, load balancers e bancos de dados. As regras definidas permitem tráfego específico (por exemplo, HTTP, SSH, MySQL) de/para blocos de endereços IP definidos, garantindo que apenas o tráfego necessário e seguro seja permitido, o que é fundamental para a segurança da rede.
 
-1. **Gerenciamento de Credenciais do Banco de Dados**: O username e password do banco de dados são gerenciados através de variáveis, o que sugere um método seguro e centralizado de gerenciamento de credenciais, essencial para a segurança e manutenção do banco de dados.
-
-1. **Escolha da Imagem Django para o Launch Template**: A AMI selecionada é específica para Django (Bitnami com Linux Debian 11 - x86-64), o que indica uma configuração otimizada e pronta para uso com aplicações Django, garantindo eficiência e estabilidade. Além disso, a imagem escolhida recebe atualizações regulares, sempre garantindo a última versão estável de todos os componentes.
 
 1. **Auto Scaling Group**: A configuração de um grupo de auto scaling para gerenciar a escalabilidade das instâncias EC2 de forma dinâmica, em resposta a mudanças na demanda ou performance. Mais específicamente, esta escalabilidade é dada pela alta utilização de CPU, que é monitorada através de um alarme CloudWatch.
 
