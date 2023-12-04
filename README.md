@@ -43,7 +43,7 @@ terraform apply -var-file=../secrets.tfvars -lock=false
 No final da execucao, vai ser apresentado um link da aws onde voce pode acessar a aplicacao atraves de qualquer uma das instancias montadas pelo script.
 Caso queira ver as operacoes CRUD, basta rodar a aplicacao com /docs no final 
 
-![diagrama de arquitetura](img/arquitetura-cloud.png)
+![diagrama de arquitetura](Aplicacao.png)
 
 
 1. Infraestrutura como Código (IaC) com Terraform.
